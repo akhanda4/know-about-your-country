@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="jumbotron heading">Country Guide</div>
+  <div class="jumbotron ar">
+    <div class="heading">
+      <h1>Know about your country</h1>
+    </div>
+    <div class="col-sm-3 text-field">
+      <input type="text" placeholder="Enter your country name" class="form-control md" value="" id="country-name" onkeypress="getCountryInfo(event)" />
+    </div>
+    <div class="btn-area" >
+      <button class="btn btn-info btn-sm rnv" onclick="getCountryInfo() " id="btn">Get Details</button>
+    </div>
+  </div>
+
+  <div class="jumbotron br" id="image" style="display: none;">
+    <img style="display: none;" alt="Country Image" id="image-area"  src="">
+
+    <div class="jumbotron cr" style="box-shadow: #c6c8ca 1px 1px" id="details">
+
+    </div>
+    <br />
+    <br />
+  </div>
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
