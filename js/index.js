@@ -2,7 +2,6 @@
 function getCountryInfo(event){
 	if(event.keyCode === 13){
 		console.log("Enter key presses");
-	}
   let image_area = document.getElementById('image-area');
   let country_name = document.getElementById('country-name').value;
   let details = document.getElementById('details');
@@ -17,15 +16,6 @@ function getCountryInfo(event){
       return console.log("success");
     }
   });
-
-/*  fetch(`https://restcountries.eu/rest/v2/name/`+country_name+`?fullText=true`)
-    .then(function() {
-        console.log("ok");
-    }).catch(function() {
-        alert("Internet connection not available");
-        return;
-    });
-*/
   fetch(`https://restcountries.eu/rest/v2/name/`+country_name+`?fullText=true`)
     .then(res =>   res.json())
     .then(posts => {
@@ -43,17 +33,5 @@ function getCountryInfo(event){
       details.innerHTML+="<span class='abc'>Languages: </span>"+"<span class='def'>"+posts[0].languages[0].name+"</span> <br/>";
     })
     .then(res => console.log('Success:', JSON.stringify(res)));
-
 }
-
-
-/*The national flag of the country "iso639_1":"hi","iso639_2":"hin","name":"Hindi","nativeName":"हिन्दी"
-The name of the country
-The capital
-Region
-Sub-region
-Population
-Time zone
-Native name
-Currency
-Languages*/
+}
