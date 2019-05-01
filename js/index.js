@@ -1,6 +1,5 @@
 
-function getCountryInfo(event){
-	if(event.keyCode === 13){
+function getCountryInfo(){
 		console.log("Enter key presses");
   let image_area = document.getElementById('image-area');
   let country_name = document.getElementById('country-name').value;
@@ -33,5 +32,4 @@ function getCountryInfo(event){
       details.innerHTML+="<span class='abc'>Languages: </span>"+"<span class='def'>"+posts[0].languages[0].name+"</span> <br/>";
     })
     .then(res => console.log('Success:', JSON.stringify(res)));
-}
 }
