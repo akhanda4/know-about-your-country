@@ -1,6 +1,6 @@
 .heading{
   padding:1rem 4rem;
-  width: 1400px;
+  width: 100%;
 
 }
 .img-area,.btn-area{
@@ -9,9 +9,6 @@
 }
 .ar{
   margin: auto;
-
-  width: 1400px;
-  height: 300px;
 }
 .br{
   margin: 50px auto auto;
@@ -24,6 +21,7 @@
 .cr{
   background: rgba(159,255,159,0.6);
   width: 1340px;
+  margin: auto;
 }
 img{
   transform: 1s;
