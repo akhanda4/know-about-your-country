@@ -1,6 +1,5 @@
 
 function getCountryInfo(){
-		console.log("Enter key presses");
   let image_area = document.getElementById('image-area');
   let country_name = document.getElementById('country-name').value;
   let details = document.getElementById('details');
@@ -10,9 +9,6 @@ function getCountryInfo(){
     if (response.status!==200) {
       console.log("Check your internet");
       return;
-    }
-    else{
-      return console.log("success");
     }
   });
   fetch(`https://restcountries.eu/rest/v2/name/`+country_name+`?fullText=true`)
@@ -31,5 +27,5 @@ function getCountryInfo(){
       details.innerHTML+="<span class='abc'>Currency: </span>"+"<span class='def'>"+posts[0].currencies[0].code +" "+posts[0].currencies[0].symbol +"</span><br/>";
       details.innerHTML+="<span class='abc'>Languages: </span>"+"<span class='def'>"+posts[0].languages[0].name+"</span> <br/>";
     })
-    .then(res => console.log('Success:', JSON.stringify(res)));
+    /*.then(res => console.log('Success:', JSON.stringify(res)));*/
 }
