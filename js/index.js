@@ -17,7 +17,7 @@ let flagg=0;
                     window.scrollTo(0,570);
                 },320);
                 setTimeout(function(){
-                    window.scrollTo(0,1030);
+                    window.scrollTo(0,1080);
                 },1200);
             }
         });
