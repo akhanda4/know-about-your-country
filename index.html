@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -18,10 +19,10 @@
       <input type="text" placeholder="Enter your country name" class="form-control md" value="" id="country-name" />
     </div>
     <div class="btn-area" >
-      <button class="btn btn-info btn-sm rnv" onclick="return getCountryInfo() " id="btn">Get Details</button>
+      <button type="button" class="btn btn-info btn-sm rnv" onclick="return getCountryInfo() " id="btn">Get Details</button>
     </div>
   </div>
-  <div class="alert alert-danger alertbox" style="display: none;" role="alert">
+  <div class="alert alert-danger alert-box" style="display: none;" role="alert">
     oops! Not Found
   </div>
   <div class="jumbotron br" id="image" style="display: none;">

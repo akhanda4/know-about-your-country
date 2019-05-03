@@ -1,7 +1,14 @@
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body{
+  overflow: auto;
+  width: 100%;
+}
 .heading{
   padding:1rem 4rem;
   width: 100%;
-
 }
 .img-area,.btn-area{
   text-align: center;
@@ -22,7 +29,6 @@
   border-radius: 0px!important;
 }
 img{
-  transform: 1s;
   text-align: center;
   height: 100%;
   width: 100%;
