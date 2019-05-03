@@ -1,10 +1,4 @@
 function getCountryInfo(){
-    setTimeout(function(){
-        window.scrollTo(0,550);
-    },300);
-    setTimeout(function(){
-        window.scrollTo(0,1100);
-    },1200);
   let image_area = document.getElementById('image-area');
   let country_name = document.getElementById('country-name').value;
   let details = document.getElementById('details');
@@ -18,6 +12,13 @@ let flagg=0;
                 console.log("Check your internet");
                 flagg = 1;
                 return;
+            }else{
+                setTimeout(function(){
+                    window.scrollTo(0,550);
+                },300);
+                setTimeout(function(){
+                    window.scrollTo(0,1100);
+                },1200);
             }
         });
     fetch(`https://restcountries.eu/rest/v2/name/` + country_name + `?fullText=true`)
