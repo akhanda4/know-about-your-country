@@ -15,7 +15,7 @@ let flagg=0;
             }else{
                 setTimeout(function(){
                     window.scrollTo(0,550);
-                },300);
+                },320);
                 setTimeout(function(){
                     window.scrollTo(0,1100);
                 },1200);
