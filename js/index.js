@@ -14,7 +14,7 @@ let flagg=0;
                 return;
             }else{
                 setTimeout(function(){
-                    window.scrollTo(0,570);
+                    window.scrollTo(0,500);
                 },320);
                 setTimeout(function(){
                     window.scrollTo(0,1100);
